@@ -19,7 +19,7 @@ function displayImage() {
               var imageUrl = response.data[g].images.original.url;
               var imageRating = response.data[g].rating;
               var imgBox = $("<img>");
-              var imgRat = $("<p>");
+              var imgRat = $("<p>").text("Rating: " + imageRating);
 
               imgBox.attr("src", imageUrl);
               imgRat.attr(imageRating);
