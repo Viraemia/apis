@@ -1,3 +1,4 @@
+
 var search = ["Cats", "Huskies", "Cthulhu", "Hockey", "Beer", "Deadpool"];
 
 function displayImage() {
