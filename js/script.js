@@ -9,10 +9,10 @@ function displayImage() {
     $.ajax({
         url: queryURL,
         method: "GET"
-      }).then(function(response) {
+      })
+      
+      .then(function(response) {
           console.log(response)
-
-          
 
           for (var g = 0; g < response.data.length; g++) {
               var imgDiv = $("<div class='image'>");
@@ -27,9 +27,9 @@ function displayImage() {
               imgDiv.append(imgRat);
               $("#images").prepend(imgDiv);
 
-          }
+            }
         });
-        }
+     }
 
     function renderButtons() {
         $("#buttons-view").empty();
